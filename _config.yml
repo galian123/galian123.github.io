@@ -27,7 +27,7 @@ github_username: galian123
 markdown: kramdown
 kramdown:
     input: GFM
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-slate
 gems:
   - jekyll-feed
 exclude:
