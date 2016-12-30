@@ -1,14 +1,37 @@
 ---
 layout: default
 ---
+<div id="status">
+	<h2 class="title">{{ page.title }}</h2>
+	<span>{{ page.date | date_to_string }}</span>
+	<br>
+	{% if page.tags != empty %}
+		<span class="tags">
+			<span>标签：</span>
+			{% for tag in page.tags %}
+				<span>{{ tag }}</span>
+			{% endfor %}
+		</span>
+	{% endif %}
+	<br>
+	{% if page.category != empty %}
+		<span class="category">
+			Category：	<span>{{ page.category }}</span>
+		</span>
+	{% endif %}
+	<br>
+	<span Post adress: {{ page.url }}</span>
+	<br><br>
+</div>
+
 <div id="post">
 {{ content }}
 </div>
-
+<br>
 <div id="related">
   <h2>Related Posts</h2>
     <ul class="posts">
-	    {% for post in site.related_posts limit:3 %}
+	    {% for post in site.related_posts limit:5 %}
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 	    {% endfor %}
 	</ul>
