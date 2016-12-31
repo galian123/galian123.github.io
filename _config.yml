@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   起名【向死而生】，是因为人生来就是不断地向死亡靠近。
   当意识到自己在几十年后即化为尘土，我开始反思：我该如何度过这之后的几十年？我该做些什么？我该留下什么？
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://galian.wang" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: galian123
 github_username: galian123
 
@@ -35,3 +35,13 @@ exclude:
   - Gemfile.lock
 
 permalink: /blog/:year/:month/:day/:title
+timezone: +0800
+incremental: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: galian.wang
