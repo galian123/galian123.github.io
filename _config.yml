@@ -33,3 +33,5 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+permalink: /blog/:year/:month/:day/:title

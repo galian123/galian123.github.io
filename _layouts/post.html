@@ -4,8 +4,9 @@ layout: default
 <div id="status">
 	<h2 class="title">{{ page.title }}</h2>
 	<span>{{ page.date | date_to_string }}</span>
-	<br>
+
 	{% if page.tags != empty %}
+	  <br>
 		<span class="tags">
 			<span>标签：</span>
 			{% for tag in page.tags %}
@@ -13,14 +14,17 @@ layout: default
 			{% endfor %}
 		</span>
 	{% endif %}
-	<br>
-	{% if page.category != empty %}
+
+	{% if page.categories != empty %}
+	  <br>
 		<span class="category">
-			Category：	<span>{{ page.category }}</span>
+			<span> Category：</span>
+			{% for category in page.categories %}
+			  <span>{{ category }}</span>
+			{% endfor %}
 		</span>
 	{% endif %}
-	<br>
-	<span Post adress: {{ page.url }}</span>
+	
 	<br><br>
 </div>
 
