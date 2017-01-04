@@ -45,3 +45,12 @@ defaults:
       type: "posts"
     values:
       author: galian.wang
+
+#
+# Pagination config
+#
+gems:			[jekyll-paginate]
+paginate:		10
+paginate_path:		"/page:num/"
+
+excerpt_separator: <!--more-->

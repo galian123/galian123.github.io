@@ -9,6 +9,8 @@ categories: domain
 
 可以使用 **[http://galian.wang](http://galian.wang)** 来访问了，当然 使用 **[http://galian.github.io](http://galian.wang)** 也可以访问。
 
+<!--more-->
+
 新域名有效期到 2026年12月31日 早上8点49分，希望到那时我还能想起这个地方，并且这个地方还值得我为这个老域名续费。
 
 **2017年 加油！**

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="home">
+	<h1 class="page-heading">Posts</h1>
+	<ul class="post-list">
+	{% for post in paginator.posts %}
+		<li>
+			<span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
+			<h2>
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</h2>
+			<section>
+				{{ post.excerpt }}
+				<div class="fadeout"></div>
+			</section>
+			<p class="more"><a href="{{ post.url | prepend: site.baseurl }}">阅读全文</a></p>
+		</li>
+	{% endfor %}
+	</ul>
+</div>
+
+<div class="pagination">
+	{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path }}" class="previous">前一页</a>
+	{% endif %}
+	<span class="page_number ">Page: {{ paginator.page }} / {{ paginator.total_pages }}</span>
+	{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path }}" class="next">下一页</a>
+	{% endif %}
+</div>
+
+<br>
+<p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">订阅我的博客 RSS</a></p>

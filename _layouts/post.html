@@ -1,12 +1,22 @@
 ---
 layout: default
 ---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
 <div id="status">
-	<h2 class="title">{{ page.title }}</h2>
-	<span>{{ page.date | date_to_string }}  by <a href="{{site.url}}/about"> {{ page.author }} </a></span>
+	<h2 class="title" class="post-title" itemprop="name headline">{{ page.title }}</h2>
+	<!-- <span>{{ page.date | date: "%b %d, %Y" }}  by <a href="{{site.url}}/about"> {{ page.author }} </a></span> -->
+	<p class="post-meta">
+		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
+		{% if page.author %} by
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<span itemprop="name"><a href="{{site.url}}/about"> {{ page.author }} </a>
+			</span>
+		</span>
+		{% endif %}
+	</p>
 
 	{% if page.tags != empty %}
-	  <br>
 		<span class="tags">
 			<span>Tag：</span>
 			{% for tag in page.tags %}
@@ -28,7 +38,7 @@ layout: default
 	<br><br>
 </div>
 
-<div id="post">
+<div id="post" class="post-content" itemprop="articleBody">
 {{ content }}
 </div>
 
@@ -49,3 +59,5 @@ layout: default
 	    {% endfor %}
 	</ul>
 </div>
+
+</article>

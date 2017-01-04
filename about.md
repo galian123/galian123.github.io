@@ -15,3 +15,5 @@ permalink: /about/
 我其他的技术类的博文，主要发布在CSDN [Abracadabra的专栏](http://blog.csdn.net/u013553529)，欢迎关注。
 
 {% include icon-github.html username="galian123" %}
+
+<p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">欢迎订阅 我的博客 RSS</a></p>
