@@ -54,3 +54,6 @@ paginate:		10
 paginate_path:		"/page:num/"
 
 excerpt_separator: <!--more-->
+
+tags_path: /blog/tags/
+category_path: /blog/categories/

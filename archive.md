@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Archive
-permalink: /archive/
+permalink: /blog/archive/
 ---
 
 所有博客文章：

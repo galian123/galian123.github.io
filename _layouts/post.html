@@ -6,7 +6,7 @@ layout: default
 <div id="status">
 	<h2 class="title" class="post-title" itemprop="name headline">{{ page.title }}</h2>
 	<!-- <span>{{ page.date | date: "%b %d, %Y" }}  by <a href="{{site.url}}/about"> {{ page.author }} </a></span> -->
-	<p class="post-meta">
+	<span class="post-meta">
 		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
 		{% if page.author %} by
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -14,30 +14,27 @@ layout: default
 			</span>
 		</span>
 		{% endif %}
-	</p>
+	</span>
 
 	{% if page.tags != empty %}
 		<span class="tags">
-			<span>Tag：</span>
+			<span class="post-meta">  Tag：</span>
 			{% for tag in page.tags %}
-				<span>{{ tag }}</span>
+			  <a href="{{ site.baseurl }}{{ site.tags_path }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
 			{% endfor %}
 		</span>
 	{% endif %}
 
 	{% if page.categories != empty %}
-	  <br>
-		<span class="category">
-			<span> Category：</span>
+		<p class="category">
+			<span class="post-meta"> Category：</span>
 			{% for category in page.categories %}
-			  <span>{{ category }}</span>
+			  <a href="{{ site.baseurl }}{{ site.category_path }}#{{ category | slugify }}" class="post-tag">{{ category }}</a>
 			{% endfor %}
-		</span>
+		</p>
 	{% endif %}
-
-	<br><br>
 </div>
-
+	<br>
 <div id="post" class="post-content" itemprop="articleBody">
 {{ content }}
 </div>
