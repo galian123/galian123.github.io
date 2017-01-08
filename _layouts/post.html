@@ -8,9 +8,14 @@ layout: default
 	<!-- <span>{{ page.date | date: "%b %d, %Y" }}  by <a href="{{site.url}}/about"> {{ page.author }} </a></span> -->
 	<span class="post-meta">
 		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
-		{% if page.author %} by
+		{% if page.author == site.site_author %} by
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<span itemprop="name"><a href="{{site.url}}/about"> {{ page.author }} </a>
+			</span>
+		</span>
+		{% else %}
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<span itemprop="name"><a href=""> {{ page.author }} </a>
 			</span>
 		</span>
 		{% endif %}

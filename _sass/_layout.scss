@@ -162,6 +162,19 @@
     }
 }
 
+.site-footer-below {
+  .site-footer-year {
+    &:before {
+      content: "\f1f9";
+      font-family: $font-font-awesome;
+      }
+  }
+
+  text-align: center;
+  color: grey;
+}
+
+
 
 
 /**
