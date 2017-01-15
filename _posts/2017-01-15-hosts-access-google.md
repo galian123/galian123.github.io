@@ -18,6 +18,8 @@ tags: hosts
 
 不同系统hosts文件的位置：（摘自laod.cn）
 
+<!--more-->
+
 ```
 Windows 系统hosts位于 C:\Windows\System32\drivers\etc\hosts
 Android（安卓）系统hosts位于 /etc/hosts
@@ -39,7 +41,8 @@ Linux系统hosts位于 /etc/hosts
 这篇blog原本发布在CSDN，无奈被CSDN删除，原因大家都懂的。
 
 如果不懂，可以看看这个新闻：**谷歌是在封网站，能连就不正常**
-！[]({{ site.url }}/images/aliyun_reply.jpg)
+
+![]({{ site.url }}/images/aliyun_reply.jpg)
 
 没有责怪CSDN和阿里云的意思，大环境如此，都是为了生存。
 
@@ -47,6 +50,6 @@ Linux系统hosts位于 /etc/hosts
 
 在CSDN未能发出的blog：
 
-！[]({{ site.url }}/images/deleted_by_csdn.jpg)
+![]({{ site.url }}/images/deleted_by_csdn.jpg)
 
-！[]({{ site.url }}/images/deleted_blog_about_hosts.jpg)
+![]({{ site.url }}/images/deleted_blog_about_hosts.jpg)
