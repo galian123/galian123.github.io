@@ -7,7 +7,7 @@ categories: domain
 
 2016年的最后一天，申请了自己的域名 **`galian.wang`** 。
 
-可以使用 **[http://galian.wang](http://galian.wang)** 来访问了，当然 使用 **[http://galian.github.io](http://galian.wang)** 也可以访问。
+可以使用 **[http://galian.wang](http://galian.wang)** 来访问了，当然 使用 **[http://galian123.github.io](http://galian123.github.io)** 也可以访问。
 
 <!--more-->
 
