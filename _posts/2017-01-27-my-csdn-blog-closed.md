@@ -18,3 +18,22 @@ CSDN对技术文章的审核一直很严，所有博文都是审核之后才能�
 <!--more-->
 
 ![]({{ site.url }}/images/my_csdn_blog_close.jpg)
+
+
+-------------------------分割线-------------------------
+
+后续：
+
+我给CSDN管理员发邮件，询问博客被关闭的原因，CSDN管理员回复如下：
+
+![]({{ site.url }}/images/csdn_reply1.jpg)
+
+我回复询问是哪个敏感信息时，CSDN管理员回复如下：
+
+![]({{ site.url }}/images/csdn_reply2.jpg)
+
+我发在CSDN的博文，在此链接：
+
+[]({{ site.url }}/blog/2017/01/28/blocked-csdn-blog)
+
+我真不知道到底哪个是敏感信息，谁能告诉？
