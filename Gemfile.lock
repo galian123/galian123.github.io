@@ -18,7 +18,7 @@ GEM
     execjs (2.7.0)
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
-    ffi (1.9.17)
+    ffi (1.9.18)
     forwardable-extended (2.6.0)
     gemoji (2.1.0)
     github-pages (104)
@@ -54,7 +54,7 @@ GEM
     html-pipeline (2.5.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
-    i18n (0.7.0)
+    i18n (0.8.1)
     jekyll (3.3.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -118,7 +118,7 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (1.5.3)
     rb-fsevent (0.9.8)
-    rb-inotify (0.9.7)
+    rb-inotify (0.9.8)
       ffi (>= 0.5.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
@@ -128,7 +128,7 @@ GEM
       faraday (~> 0.8, < 1.0)
     terminal-table (1.7.3)
       unicode-display_width (~> 1.1.1)
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
@@ -147,4 +147,4 @@ RUBY VERSION
    ruby 2.1.5p273
 
 BUNDLED WITH
-   1.13.7
+   1.14.6
