@@ -8,4 +8,6 @@ tags: 年会
 
 告别2016多磨难的一年，希望三星2017重生。
 
+<!--more-->
+
 ![annual-meeting.jpg]({{ site.url }}/images/annual-meeting.jpg)
