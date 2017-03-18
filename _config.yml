@@ -58,3 +58,8 @@ excerpt_separator: <!--more-->
 
 tags_path: /blog/tags/
 category_path: /blog/categories/
+
+leancloud:
+  enable: true
+  app_id: edcgBgescCWpVAgimGW1nbfL-gzGzoHsz
+  app_key: 2c30PCULFMUSgBVNOwNKpqeD

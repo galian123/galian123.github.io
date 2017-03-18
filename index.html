@@ -8,6 +8,13 @@ layout: default
 	{% for post in paginator.posts %}
 		<li>
 			<span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
+			{% if site.leancloud.enable %}
+				<span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
+				 <span class="post-meta-divider">|</span>
+				 <span class="post-meta-item-text"> Hits:  </span>
+				 <span class="leancloud-visitors-count"></span>
+				</span>
+			{% endif %}
 			<h2>
 				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 			</h2>
