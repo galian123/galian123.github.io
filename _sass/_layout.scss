@@ -230,39 +230,58 @@
 }
 
 .post-title {
-    font-size: 32px;
+    font-size: 1.8em; //32px;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.5;
+    text-align: center;
+    border-bottom: 5px solid lavender;
 
     @include media-query($on-laptop) {
-        font-size: 26px;
+        font-size: 1.8em; //26px;
     }
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
+    h1 {
+        font-size: 1.8em;
+        border-bottom: 5px solid lavender;
+    }
 
     h2 {
-        font-size: 32px;
+        font-size: 1.6em; //32px;
+        background-color: LightCyan;
+        border-left: 3px solid lavender;
+        border-bottom: 1px solid lavender;
 
         @include media-query($on-laptop) {
-            font-size: 28px;
+            font-size: 1.6em; //28px;
         }
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 1.4em; //26px;
+        background-color: Azure;
+        border-left: 3px solid lavender;
+        border-bottom: 1px solid lavender;
 
         @include media-query($on-laptop) {
-            font-size: 22px;
+            font-size: 1.4em; //22px;
         }
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 1.2em; //20px;
+        background-color: MintCream;
+        border-left: 3px solid lavender;
+        border-bottom: 1px solid lavender;
 
         @include media-query($on-laptop) {
-            font-size: 18px;
+            font-size: 1.2em; //18px;
         }
+    }
+
+    h5 {
+        font-size: 1.1em;
     }
 }
