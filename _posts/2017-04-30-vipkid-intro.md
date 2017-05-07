@@ -8,7 +8,7 @@ tags: 在线教育 VIPKID
 
 注： 本文的内容来自 VIPKID 的官方网站
 
-# 0. VIPKID 是什么？
+## &#9733; 0. VIPKID 是什么？
 
 VIPKID 的logo：
 
@@ -25,7 +25,7 @@ VIPKID 的官方网站是：『 http://vipkid.com.cn 』
 
 ![]({{ site.url }}/images/vipkid/vipkid_main.png)
 
-# 1. VIPKID 的学习理念
+## &#9733; 1. VIPKID 的学习理念
 
 参考：http://vipkid.com.cn/xuexilinian
 
@@ -47,7 +47,7 @@ VIPKID 的官方网站是：『 http://vipkid.com.cn 』
 ![]({{ site.url }}/images/vipkid/vipkid_intro6.png)
 
 
-# 2. VIPKID 的特色
+## &#9733; 2. VIPKID 的特色
 
 参考：http://vipkid.com.cn/vipkidtese
 
@@ -60,7 +60,7 @@ VIPKID 的官方网站是：『 http://vipkid.com.cn 』
 ![]({{ site.url }}/images/vipkid/vipkid_special3.png)
 
 
-# 3. VIPKID 的北美师资
+## &#9733; 3. VIPKID 的北美师资
 
 参考：http://vipkid.com.cn/beimeishizi
 
@@ -75,7 +75,7 @@ VIPKID 的官方网站是：『 http://vipkid.com.cn 』
 
 ![]({{ site.url }}/images/vipkid/vipkid_teacher4.png)
 
-# 4. VIPKID 的课程体系
+## &#9733; 4. VIPKID 的课程体系
 
 参考： http://www.vipkid.com.cn/kechengjieshao
 
