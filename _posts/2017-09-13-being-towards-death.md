@@ -2,7 +2,7 @@
 layout: post
 title: 向死而生——早一点思考如何过这一生
 date: 2017-09-13 23:13 +0800
-categories: 教育, 我的教育观
+categories: [教育, 我的教育观]
 tags:
 ---
 
