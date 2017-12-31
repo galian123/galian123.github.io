@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-	<h1 class="page-heading">Posts</h1>
+	<h2 class="page-heading">Posts</h2>
 	<ul class="post-list">
 	{% for post in paginator.posts %}
 		<li>
@@ -15,9 +15,9 @@ layout: default
 				 <span class="leancloud-visitors-count"></span>
 				</span>
 			{% endif %}
-			<h2>
+			<h3>
 				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</h2>
+			</h3>
 			<section>
 				{{ post.excerpt }}
 				<!-- <div class="fadeout"></div> -->
