@@ -2,11 +2,11 @@
 <head>
 <style>
 h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 body, p, input {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 </style>
 <script>
@@ -127,10 +127,14 @@ function onTapPreOrderProduct() {
 
 function checkStatus() {
     if (typeof secCallbackInterface == "undefined") {
-        document.getElementById('p0').innerHTML='secCallbackInterface is undefined';
+        document.getElementById('p0').innerHTML = 'secCallbackInterface is undefined';
+    } else {
+        document.getElementById('p0').innerHTML = 'secCallbackInterface is defined';
     }
     if (typeof SebHandlerInterface == "undefined") {
         document.getElementById('p0').innerHTML += '<br> SebHandlerInterface is undefined';
+    } else {
+        document.getElementById('p0').innerHTML += '<br> SebHandlerInterface is defined';
     }
 }
 
