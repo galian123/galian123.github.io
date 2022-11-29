@@ -1,0 +1,159 @@
+<html>
+<head>
+<script>
+
+function onGetAppVersion() {
+    var temp = document.getElementById('version').value;
+    console.log('onGetAppVersion(): ' + temp);
+    var id = 'p1'
+    try {
+        if (typeof secCallbackInterface != "undefined") {
+            var res = secCallbackInterface.getAppVersion(temp);
+            document.getElementById(id).innerHTML = res;
+        }
+    } catch(e) {
+        document.getElementById(id).innerHTML = 'secCallbackInterface.getAppVersion(): ' + e.message;
+    }
+    try {
+        if (typeof SebHandlerInterface != "undefined") {
+            var res = SebHandlerInterface.getAppVersion(temp);
+            document.getElementById(id).innerHTML += '<br> ' + res
+        }
+    } catch(e) {
+        document.getElementById(id).innerHTML += '<br> SebHandlerInterface.getAppVersion(): ' + e.message;
+    }
+}
+
+
+function onGetDeviceId() {
+    var temp = document.getElementById('devid').value;
+    console.log('onGetDeviceId(): ' + temp);
+    var id = 'p2'
+    try {
+        if (typeof secCallbackInterface != "undefined") {
+            var res = secCallbackInterface.getDeviceId(temp);
+            document.getElementById(id).innerHTML = res;
+        }
+    } catch(e) {
+        document.getElementById(id).innerHTML = 'secCallbackInterface.getDeviceId(): ' + e.message;
+    }
+    try {
+        if (typeof SebHandlerInterface != "undefined") {
+            var res = SebHandlerInterface.getDeviceId(temp);
+            document.getElementById(id).innerHTML += '<br> ' + res
+        }
+    } catch(e) {
+        document.getElementById(id).innerHTML += '<br> SebHandlerInterface.getDeviceId(): ' + e.message;
+    }
+}
+
+
+function onGetModelName() {
+    var temp = document.getElementById('modelname').value;
+    console.log('onGetModelName(): ' + temp);
+    var id = 'p3'
+    try {
+        if (typeof secCallbackInterface != "undefined") {
+            var res = secCallbackInterface.getModelName(temp);
+            document.getElementById(id).innerHTML = res;
+        }
+    } catch(e) {
+        document.getElementById(id).innerHTML = 'secCallbackInterface.getModelName(): ' + e.message;
+    }
+    try {
+        if (typeof SebHandlerInterface != "undefined") {
+            var res = SebHandlerInterface.getModelName(temp);
+            document.getElementById(id).innerHTML += '<br> ' + res
+        }
+    } catch(e) {
+        document.getElementById(id).innerHTML += '<br> SebHandlerInterface.getModelName(): ' + e.message;
+    }
+}
+
+
+function onGetUserInfo() {
+    var temp = document.getElementById('userinfo').value;
+    console.log('onGetUserInfo(): ' + temp);
+    var id = 'p4'
+    try {
+        if (typeof secCallbackInterface != "undefined") {
+            var res = secCallbackInterface.getUserInfo(temp);
+            document.getElementById(id).innerHTML = res;
+        }
+    } catch(e) {
+        document.getElementById(id).innerHTML = 'secCallbackInterface.getUserInfo(): ' + e.message;
+    }
+    try {
+        if (typeof SebHandlerInterface != "undefined") {
+            var res = SebHandlerInterface.getUserInfo(temp);
+            document.getElementById(id).innerHTML += '<br> ' + res
+        }
+    } catch(e) {
+        document.getElementById(id).innerHTML += '<br> SebHandlerInterface.getUserInfo(): ' + e.message;
+    }
+}
+
+
+function onTapPreOrderProduct() {
+    var temp = document.getElementById('product').value;
+    console.log('onTapPreOrderProduct(): ' + temp);
+    var id = 'p5'
+    try {
+        if (typeof secCallbackInterface != "undefined") {
+            var res = secCallbackInterface.tapPreOrderProduct(temp);
+            document.getElementById(id).innerHTML = res;
+        }
+    } catch(e) {
+        document.getElementById(id).innerHTML = 'secCallbackInterface.tapPreOrderProduct(): ' + e.message;
+    }
+    try {
+        if (typeof SebHandlerInterface != "undefined") {
+            var res = SebHandlerInterface.tapPreOrderProduct(temp);
+            document.getElementById(id).innerHTML += '<br> ' + res
+        }
+    } catch(e) {
+        document.getElementById(id).innerHTML += '<br> SebHandlerInterface.tapPreOrderProduct(): ' + e.message;
+    }
+}
+
+function checkStatus() {
+    if (typeof secCallbackInterface == "undefined") {
+        document.getElementById('p0').innerHTML='secCallbackInterface is undefined';
+    }
+    if (typeof SebHandlerInterface == "undefined") {
+        document.getElementById('p0').innerHTML += '<br> SebHandlerInterface is undefined';
+    }
+}
+
+</script>
+</head>
+
+<body>
+<h2>PoC file: Only for Test</h2>
+<p>Note: Do Not Use this file for any other illegal purpose except study or test.</p>
+
+<p id="p0">status</p>
+<input type="button" value="checkStatus" onclick="checkStatus()"/><br/><br/>
+
+<input type="text" id="version" /><br/>
+<input type="button" value="getAppVersion" onclick="onGetAppVersion()"/><br/>
+<p id="p1">Hello World!</p>
+
+<input type="text" id="devid" /><br/>
+<input type="button" value="getDeviceId" onclick="onGetDeviceId()"/><br/>
+<p id="p2">Hello World!</p>
+
+<input type="text" id="modelname" /><br/><br/>
+<input type="button" value="getModelName" onclick="onGetModelName()"/><br/>
+<p id="p3">Hello World!</p>
+
+<input type="text" id="userinfo" /><br/>
+<input type="button" value="getUserInfo" onclick="onGetUserInfo()"/><br/>
+<p id="p4">Hello World!</p>
+
+<input type="text" id="product" /><br/>
+<input type="button" value="tapPreOrderProduct" onclick="onTapPreOrderProduct()"/><br/>
+<p id="p5">Hello World!</p>
+
+</body>
+</html>
